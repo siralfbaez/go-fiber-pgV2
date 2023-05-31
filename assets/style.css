@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+P {
+    text-align: center;
+}
+H2,H1 {
+    text-align: center;
+    color: cornflowerblue;
+}

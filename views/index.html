@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+    <h1>Hello {{ .Name }}!</h1>
+
+    {{ if .Age }}
+        <h2>Age: {{ .Age }} </h2>
+    {{ end }}
+
+    {{ if .Message }}
+        <p> {{ .Message }} </p>
+    {{ end }}
+
+    <form action="/" method="POST">
+        <label>
+            <input name="message"/>
+        </label>
+        <button type="submit">Send message </button>
+    </form>
+</body>
+</html>
